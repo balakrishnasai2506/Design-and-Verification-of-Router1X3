@@ -1,4 +1,4 @@
-# Router1X3
+# Design and Verification of Router1X3
 This project implements a 1x3 Router designed in Verilog and verified using SystemVerilog with UVM (Universal Verification Methodology). The router is capable of directing data from a single input channel to one of three output channels based on the control signals.
 
 # Key Features
