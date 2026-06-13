@@ -27,7 +27,7 @@ class router_scoreboard extends uvm_scoreboard;
 	extern function void report_phase(uvm_phase phase);
 
 	//Define Covergroups for both SRC and DST
-	covergroup router_fcov1;
+	covergroup router_fcov1; //SRC COV_GRP
 		option.per_instance = 1;
 		ADDR: coverpoint  src_cov_data.header[1:0] {
 								bins dest1 = {2'b00};
@@ -54,7 +54,7 @@ class router_scoreboard extends uvm_scoreboard;
 	endgroup
 
 
-        covergroup router_fcov2;
+        covergroup router_fcov2; //DST COV_GRP
                 option.per_instance = 1;
                 ADDR: coverpoint  dst_cov_data.header[1:0] {
                                                                 bins dest1 = {2'b00};
